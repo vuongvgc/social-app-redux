@@ -18,6 +18,7 @@ const postsSlice = createSlice({
           payload: {
             id: nanoid(),
             title,
+            date: new Date().toISOString(),
             content,
             userID
           }
